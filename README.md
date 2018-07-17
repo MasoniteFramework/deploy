@@ -47,7 +47,7 @@ First you will need to create `Procfile` in the root of your project (where wsgi
 web: gunicorn -w 2 wsgi:application
 ```
 
-Then add `masonite-cli` and `gunicorn` and `postgres` (or `postgres-binary`) and this package (`masonite_deploy`) to your requirements.txt:
+Then add `masonite-cli` and `gunicorn` and `psycopg2` (or `psycopg2-binary`) and this package (`masonite_deploy`) to your requirements.txt:
 
 ```
 waitress==1.1.0
@@ -56,7 +56,7 @@ masonite==2.0.11
 ...
 masonite_cli
 gunicorn
-postgres-binary
+psycopg2-binary
 masonite_deploy==0.0.1
 ```
 
