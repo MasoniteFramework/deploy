@@ -41,7 +41,7 @@ You now have access to several new commands. You can see your command by running
 
 ## Setting Up
 
-First you will need to create Procfile and put this into it:
+First you will need to create `Procfile` in the root of your project (where wsgi.py is located) and put this into it:
 
 ```
 web: gunicorn -w 2 wsgi:application
