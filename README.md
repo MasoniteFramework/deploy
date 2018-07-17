@@ -47,15 +47,17 @@ First you will need to create `Procfile` in the root of your project (where wsgi
 web: gunicorn -w 2 wsgi:application
 ```
 
-Then add `masonite-cli` and `gunicorn` and `postgres` (or `postgres-binary`) to your requirements.txt:
+Then add `masonite-cli` and `gunicorn` and `postgres` (or `postgres-binary`) and this package (`masonite_deploy`) to your requirements.txt:
 
 ```
 waitress==1.1.0
 masonite==2.0.11
+
 ...
 masonite_cli
 gunicorn
 postgres-binary
+masonite_deploy==0.0.1
 ```
 
 Lastly, commit to your origin master branch.
@@ -71,6 +73,8 @@ If you have everything above configured then we can deploy with a single command
 ```
 craft heroky:deploy --app nameofapp
 ```
+
+Let the command run and provision your app
 
 ## Configs
 
