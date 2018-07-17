@@ -71,7 +71,7 @@ Lastly, commit to your origin master branch.
 If you have everything above configured then we can deploy with a single command:
 
 ```
-craft heroky:deploy --app nameofapp
+craft heroku:deploy --app nameofapp
 ```
 
 Let the command run and provision your app
