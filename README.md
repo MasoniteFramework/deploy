@@ -54,10 +54,10 @@ waitress==1.1.0
 masonite==2.0.11
 
 ...
-masonite_cli
+masonite-cli
 gunicorn
 psycopg2-binary
-masonite_deploy==0.0.1
+masonite-deploy==0.0.1
 ```
 
 Lastly, commit to your origin master branch.
@@ -94,4 +94,9 @@ You can do the opposite by using:
 $ craft heroku:config --set
 ```
 
-This will take all the environment variables and set them into Heroku
+This will take all the environment variables configured in `.env.production` file and set them into Heroku.
+
+## Migrations
+
+You can also run migrations directly on heroku using the command `craft heroku:migrate`. It will start the Heroku app and run all pending migrations on your application.
+
